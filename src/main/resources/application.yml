@@ -11,8 +11,8 @@ spring.security.oauth2.client:
   registration:
     trsso:
       authorization-grant-type: authorization_code
-      client-id: dc-288ee32od9sfosar4uueyfm65
-      client-secret: kTk6f2Y8ysJ49UHzFRMfYT
+      client-id:
+      client-secret: 
       scope: 'openid'
       redirect-uri: 'http://localhost:8080/login/oauth2/code/trsso'
       authorization-uri: 'https://sso.thomsonreuters.com/as/authorization.oauth2'
