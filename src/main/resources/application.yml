@@ -4,6 +4,7 @@ logging:
     web.client: DEBUG
   pattern.console: '%d{HH:mm:ss} %-10.35logger{45} - %msg%n'
 
+#Comment or Remove this properties if using java based security config.
 spring.security.oauth2.client:
   provider:
     trsso:
@@ -12,9 +13,9 @@ spring.security.oauth2.client:
     trsso:
       authorization-grant-type: authorization_code
       client-id:
-      client-secret: 
+      client-secret:
       scope: 'openid'
-      redirect-uri: 'http://localhost:8080/login/oauth2/code/trsso'
+      redirect-uri: 'http://localhost:8080/login/' # same must be configured in sso config
       authorization-uri: 'https://sso.thomsonreuters.com/as/authorization.oauth2'
       token-uri: 'https://sso.thomsonreuters.com/as/token.oauth2/'
       user-info-uri: 'https://sso.thomsonreuters.com/idp/userinfo.openid/'
